@@ -39,7 +39,7 @@ If you're on older react-native versions, please see the [Advanced Setup](#advan
 2. Call the JS Initializer:
 
 ```javascript
-import ZendeskChat from "react-native-zendesk-chat";
+
 
 // Once in your application:
 ZendeskChat.init("YOUR_ZENDESK_ACCOUNT_KEY");

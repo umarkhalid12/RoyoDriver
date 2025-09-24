@@ -23,16 +23,15 @@ import { useFocusEffect } from "@react-navigation/native";
 import { cloneDeep } from "lodash";
 import ScaledImage from "react-native-scalable-image";
 import DeviceInfo, { getBundleId } from "react-native-device-info";
-import ZendeskChat from "react-native-zendesk-chat";
 import { appIds } from "../utils/constants/DynamicAppKeys";
 import { Subscriptions } from "../Screens";
-import BackgroundGeolocation from '@hariks789/react-native-background-geolocation';
+// import BackgroundGeolocation from '@hariks789/react-native-background-geolocation';
 import { useDarkMode } from "react-native-dynamic";
 import { getItem } from "../utils/utils";
 import { string } from "is_js";
 import { saveCabPoolingStatus } from "../redux/actions/init";
 import { UIActivityIndicator } from 'react-native-indicators';
-import SvgUri from 'react-native-svg-uri';
+import Svg from 'react-native-svg';
 import { log } from "react-native-reanimated";
 import messaging from '@react-native-firebase/messaging';
 import RNRestart from 'react-native-restart';
@@ -440,7 +439,7 @@ function CustomDrawerContent({
               // backgroundColor:'red'
             }}
           >
-            {(logoRegex.test(clientInfo?.logo) || logoRegex.test(clientInfo?.dark_logo)) ? <SvgUri
+            {(logoRegex.test(clientInfo?.logo) || logoRegex.test(clientInfo?.dark_logo)) ? <Svg
               width={moderateScale(width / 2)}
               height={moderateScale(width / 2)}
               source={{ uri: clientInfo?.logo || clientInfo?.dark_logo }}

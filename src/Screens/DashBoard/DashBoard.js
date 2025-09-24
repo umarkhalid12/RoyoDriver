@@ -51,7 +51,7 @@ navigator.geolocation = require('react-native-geolocation-service');
 // import BackgroundService from 'react-native-background-actions';
 import socketServices from '../../utils/scoketService';
 // import BackgroundTimer from 'react-native-background-timer';
-import BackgroundGeolocation from '@hariks789/react-native-background-geolocation';
+// import BackgroundGeolocation from '@hariks789/react-native-background-geolocation';
 import generateBoxShadowStyle from '../../Components/generateBoxShadowStyle';
 import GradientButton from '../../Components/GradientButton';
 import BottomSheet, { BottomSheetScrollView } from '@gorhom/bottom-sheet';

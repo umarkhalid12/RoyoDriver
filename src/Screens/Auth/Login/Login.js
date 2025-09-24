@@ -46,7 +46,7 @@ import { openAppSetting } from "../../../utils/openNativeApp";
 
 import validator from '../../../utils/validations';
 import stylesFunc from './styles';
-import SvgUri from 'react-native-svg-uri';
+import Svg from 'react-native-svg';
 
 var getPhonesCallingCodeAndCountryData = null;
 DeviceCountry.getCountryCode()
@@ -320,7 +320,7 @@ export default function Login({ navigation, route }) {
           marginTop: getBundleId() == appIds.lOPHT ? 50 : 0,
         }}>
         <View style={styles.imageStyle}>
-          {(logoRegex.test(clientInfo?.logo) || logoRegex.test(clientInfo?.dark_logo)) ? <SvgUri
+          {(logoRegex.test(clientInfo?.logo) || logoRegex.test(clientInfo?.dark_logo)) ? <Svg
             width={getBundleId() == appIds.lOPHT ? moderateScale(width) : moderateScale(width / 2)}
             height={moderateScale(width / 2)}
             source={{ uri: clientInfo?.logo || clientInfo?.dark_logo }}
