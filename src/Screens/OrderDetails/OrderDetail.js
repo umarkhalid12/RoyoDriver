@@ -8,9 +8,9 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import {useSelector} from 'react-redux';
-import Header from '../../Components/Header';
-import LeftRightText from '../../Components/LeftRightText';
-import WrapperContainer from '../../Components/WrapperContainer';
+import Header from '../../components/Header';
+import LeftRightText from '../../components/LeftRightText';
+import WrapperContainer from '../../components/WrapperContainer';
 import imagePath from '../../constants/imagePath';
 import strings from '../../constants/lang';
 import {navigate} from '../../navigation/NavigationService';

@@ -1,10 +1,10 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {Image, Text, TouchableOpacity, View} from 'react-native';
 import {useSelector} from 'react-redux';
-import ButtonComponent from '../../Components/ButtonComponent';
-import Header from '../../Components/Header';
-import {loaderOne} from '../../Components/Loaders/AnimatedLoaderFiles';
-import WrapperContainer from '../../Components/WrapperContainer';
+import ButtonComponent from '../../components/ButtonComponent';
+import Header from '../../components/Header';
+import {loaderOne} from '../../components/Loaders/AnimatedLoaderFiles';
+import WrapperContainer from '../../components/WrapperContainer';
 import imagePath from '../../constants/imagePath';
 import strings from '../../constants/lang';
 // import store from '../../redux/store';
@@ -21,8 +21,8 @@ import {
 } from '../../styles/responsiveSize';
 import navigationStrings from '../../navigation/navigationStrings';
 
-import QRCodeScanner from 'react-native-qrcode-scanner';
-import {RNCamera} from 'react-native-camera';
+// import QRCodeScanner from 'react-native-qrcode-scanner';
+// import {RNCamera} from 'react-native-camera';
 import {event} from 'react-native-reanimated';
 
 var ACTION_TIMER = 1500;

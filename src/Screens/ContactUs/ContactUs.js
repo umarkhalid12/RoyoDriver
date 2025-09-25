@@ -10,10 +10,10 @@ import {
 } from 'react-native';
 import Communications from 'react-native-communications';
 import {useSelector} from 'react-redux';
-import Header, {stylesFunc} from '../../Components/Header';
-import {loaderOne} from '../../Components/Loaders/AnimatedLoaderFiles';
-import TaskListCard from '../../Components/TaskListCard';
-import WrapperContainer from '../../Components/WrapperContainer';
+import Header, {stylesFunc} from '../../components/Header';
+import {loaderOne} from '../../components/Loaders/AnimatedLoaderFiles';
+import TaskListCard from '../../components/TaskListCard';
+import WrapperContainer from '../../components/WrapperContainer';
 import imagePath from '../../constants/imagePath';
 import strings from '../../constants/lang';
 import actions from '../../redux/actions';
@@ -35,7 +35,7 @@ import {
 } from '../../utils/constants/ConstantValues';
 import {showError} from '../../utils/helperFunctions';
 import DatePicker from 'react-native-date-picker';
-import DatePickerModal from '../../Components/DatePickerModal';
+import DatePickerModal from '../../components/DatePickerModal';
 import {TouchableOpacity} from 'react-native';
 import moment from 'moment';
 import navigationStrings from '../../navigation/navigationStrings';

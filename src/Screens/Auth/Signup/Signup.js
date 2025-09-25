@@ -13,15 +13,15 @@ import {
   View,
 } from 'react-native';
 import ActionSheet from 'react-native-actionsheet';
-import DocumentPicker from 'react-native-document-picker';
+// import DocumentPicker from 'react-native-document-picker';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import { useSelector } from 'react-redux';
-import GradientButton from '../../../Components/GradientButton';
-import Header from '../../../Components/Header';
-import { loaderOne } from '../../../Components/Loaders/AnimatedLoaderFiles';
-import PhoneNumberInput from '../../../Components/PhoneNumberInput';
-import TextInputWithlabel from '../../../Components/TextInputWithlabel';
-import WrapperContainer from '../../../Components/WrapperContainer';
+import GradientButton from '../../../components/GradientButton';
+import Header from '../../../components/Header';
+import { loaderOne } from '../../../components/Loaders/AnimatedLoaderFiles';
+import PhoneNumberInput from '../../../components/PhoneNumberInput';
+import TextInputWithlabel from '../../../components/TextInputWithlabel';
+import WrapperContainer from '../../../components/WrapperContainer';
 import imagePath from '../../../constants/imagePath';
 import strings from '../../../constants/lang';
 import actions from '../../../redux/actions';
@@ -56,7 +56,7 @@ import {
 import stylesFunction from './styles';
 import Modal from 'react-native-modal';
 import DatePicker from 'react-native-date-picker';
-import DatePickerModal from '../../../Components/DatePickerModal';
+import DatePickerModal from '../../../components/DatePickerModal';
 import moment from 'moment';
 import { getBundleId } from 'react-native-device-info';
 import * as RNLocalize from 'react-native-localize';
@@ -68,10 +68,10 @@ import DeviceCountry, {
   TYPE_CONFIGURATION,
 } from 'react-native-device-country';
 import SmoothPinCodeInput from 'react-native-smooth-pincode-input';
-import ButtonWithLoader from '../../../Components/ButtonWithLoader';
-import ModalComponent from '../../../Components/ModalComponent';
+import ButtonWithLoader from '../../../components/ButtonWithLoader';
+import ModalComponent from '../../../components/ModalComponent';
 import RNOtpVerify from 'react-native-otp-verify';
-import BottomSheetForm from '../../../Components/BottomSheetForm';
+import BottomSheetForm from '../../../components/BottomSheetForm';
 
 var getPhonesCallingCodeAndCountryData = null;
 DeviceCountry.getCountryCode()

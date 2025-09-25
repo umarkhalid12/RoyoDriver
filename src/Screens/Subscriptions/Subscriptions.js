@@ -3,11 +3,11 @@ import { useFocusEffect } from '@react-navigation/native';
 import { Image, View, Text, ScrollView, Button, RefreshControl, TouchableOpacity } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import { useSelector } from 'react-redux';
-import Header from '../../Components/Header';
-import { loaderOne } from '../../Components/Loaders/AnimatedLoaderFiles';
-import TextInputWithlabel from '../../Components/TextInputWithlabel';
-import WrapperContainer from '../../Components/WrapperContainer';
-import PhoneNumberInput from '../../Components/PhoneNumberInput';
+import Header from '../../components/Header';
+import { loaderOne } from '../../components/Loaders/AnimatedLoaderFiles';
+import TextInputWithlabel from '../../components/TextInputWithlabel';
+import WrapperContainer from '../../components/WrapperContainer';
+import PhoneNumberInput from '../../components/PhoneNumberInput';
 
 import strings from '../../constants/lang';
 // import store from '../../redux/store';

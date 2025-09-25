@@ -12,9 +12,9 @@ import {
 } from 'react-native';
 import RazorpayCheckout from 'react-native-razorpay';
 import {useSelector} from 'react-redux';
-import GradientButton from '../../Components/GradientButton';
-import Header from '../../Components/Header';
-import {loaderOne} from '../../Components/Loaders/AnimatedLoaderFiles';
+import GradientButton from '../../components/GradientButton';
+import Header from '../../components/Header';
+import {loaderOne} from '../../components/Loaders/AnimatedLoaderFiles';
 import WrapperContainer from '../../components/WrapperContainer';
 import imagePath from '../../constants/imagePath';
 import strings from '../../constants/lang';
@@ -35,7 +35,7 @@ import {
   initStripe,
   StripeProvider,
 } from '@stripe/stripe-react-native';
-import {useDarkMode} from 'react-native-dynamic';
+// import {useDarkMode} from 'react-native-dynamic';
 
 export default function AddMoney({navigation}) {
   const {clientInfo, themeColor, themeToggle} = useSelector(

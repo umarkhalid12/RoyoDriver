@@ -14,7 +14,7 @@ import {
 import MapView from 'react-native-maps';
 import {useSelector} from 'react-redux';
 import Header from '../../components/Header';
-import {loaderOne} from '../../Components/Loaders/AnimatedLoaderFiles';
+import {loaderOne} from '../../components/Loaders/AnimatedLoaderFiles';
 import WrapperContainer from '../../components/WrapperContainer';
 import imagePath from '../../constants/imagePath';
 import strings from '../../constants/lang';

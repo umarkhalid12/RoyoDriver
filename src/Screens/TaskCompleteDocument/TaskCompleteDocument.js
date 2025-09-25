@@ -7,19 +7,19 @@ import {
 } from 'react-native';
 import RNFS from 'react-native-fs';
 import { useSelector } from 'react-redux';
-import ButtonComponent from '../../Components/ButtonComponent';
-import Header from '../../Components/Header';
-import { loaderOne } from '../../Components/Loaders/AnimatedLoaderFiles';
-import WrapperContainer from '../../Components/WrapperContainer';
+import ButtonComponent from '../../components/ButtonComponent';
+import Header from '../../components/Header';
+import { loaderOne } from '../../components/Loaders/AnimatedLoaderFiles';
+import WrapperContainer from '../../components/WrapperContainer';
 import imagePath from '../../constants/imagePath';
 import strings from '../../constants/lang';
 import navigationStrings from '../../navigation/navigationStrings';
 import actions from '../../redux/actions';
 // import store from '../../redux/store';
-import FaceSDK, {
-  Enum,
-  FaceCaptureResponse, Image as FaceImage, MatchFacesRequest, MatchFacesResponse
-} from '@regulaforensics/react-native-face-api-beta';
+// import FaceSDK, {
+//   Enum,
+//   FaceCaptureResponse, Image as FaceImage, MatchFacesRequest, MatchFacesResponse
+// } from '@regulaforensics/react-native-face-api-beta';
 import { cloneDeep, isEmpty } from 'lodash';
 import moment from 'moment';
 import { getBundleId } from 'react-native-device-info';
@@ -27,9 +27,9 @@ import { Dropdown } from 'react-native-element-dropdown';
 import FastImage from 'react-native-fast-image';
 import ImagePicker from 'react-native-image-crop-picker';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
-import RNFetchBlob from 'rn-fetch-blob';
-import DatePickerModal from '../../Components/DatePickerModal';
-import ModalView from '../../Components/Modal';
+// import RNFetchBlob from 'rn-fetch-blob';
+import DatePickerModal from '../../components/DatePickerModal';
+import ModalView from '../../components/Modal';
 import colors from '../../styles/colors';
 import commonStylesFunc, { hitSlopProp } from '../../styles/commonStyles';
 import fontFamily from '../../styles/fontFamily';

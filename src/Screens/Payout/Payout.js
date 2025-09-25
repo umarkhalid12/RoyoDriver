@@ -12,11 +12,11 @@ import {
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import Modal from 'react-native-modal';
 import { useSelector } from 'react-redux';
-import GradientButton from '../../Components/GradientButton';
-import Header from '../../Components/Header';
-import { loaderOne } from '../../Components/Loaders/AnimatedLoaderFiles';
-import TextInputWithlabel from '../../Components/TextInputWithlabel';
-import WrapperContainer from '../../Components/WrapperContainer';
+import GradientButton from '../../components/GradientButton';
+import Header from '../../components/Header';
+import { loaderOne } from '../../components/Loaders/AnimatedLoaderFiles';
+import TextInputWithlabel from '../../components/TextInputWithlabel';
+import WrapperContainer from '../../components/WrapperContainer';
 import imagePath from '../../constants/imagePath';
 import strings from '../../constants/lang';
 import navigationStrings from '../../navigation/navigationStrings';

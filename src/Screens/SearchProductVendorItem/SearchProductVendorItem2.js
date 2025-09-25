@@ -8,13 +8,13 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import {useDarkMode} from 'react-native-dynamic';
+// import {useDarkMode} from 'react-native-dynamic';
 import {useSelector} from 'react-redux';
-import FooterLoader from '../../Components/FooterLoader';
-import {loaderOne} from '../../Components/Loaders/AnimatedLoaderFiles';
-import RoundImg from '../../Components/RoundImg';
-import SearchBar from '../../Components/SearchBar';
-import WrapperContainer from '../../Components/WrapperContainer';
+import FooterLoader from '../../components/FooterLoader';
+import {loaderOne} from '../../components/Loaders/AnimatedLoaderFiles';
+import RoundImg from '../../components/RoundImg';
+import SearchBar from '../../components/SearchBar';
+import WrapperContainer from '../../components/WrapperContainer';
 import imagePath from '../../constants/imagePath';
 import strings from '../../constants/lang';
 import staticStrings from '../../constants/staticStrings';
