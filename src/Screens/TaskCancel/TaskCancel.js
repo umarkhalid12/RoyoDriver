@@ -13,9 +13,9 @@ import {
 } from 'react-native';
 import MapView from 'react-native-maps';
 import {useSelector} from 'react-redux';
-import Header from '../../Components/Header';
+import Header from '../../components/Header';
 import {loaderOne} from '../../Components/Loaders/AnimatedLoaderFiles';
-import WrapperContainer from '../../Components/WrapperContainer';
+import WrapperContainer from '../../components/WrapperContainer';
 import imagePath from '../../constants/imagePath';
 import strings from '../../constants/lang';
 // import store from '../../redux/store';
@@ -35,7 +35,7 @@ import {
 import styles from './styles';
 import Communications from 'react-native-communications';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
-import ButtonComponent from '../../Components/ButtonComponent';
+import ButtonComponent from '../../components/ButtonComponent';
 import actions from '../../redux/actions';
 import navigationStrings from '../../navigation/navigationStrings';
 

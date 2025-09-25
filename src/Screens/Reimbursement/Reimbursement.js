@@ -10,13 +10,13 @@ import {
   Keyboard,
 } from 'react-native';
 import {useSelector} from 'react-redux';
-import {loaderOne} from '../../Components/Loaders/AnimatedLoaderFiles';
-import WrapperContainer from '../../Components/WrapperContainer';
+import {loaderOne} from '../../components/Loaders/AnimatedLoaderFiles';
+import WrapperContainer from '../../components/WrapperContainer';
 // import store from '../../redux/store';
 import colors from '../../styles/colors';
 import commonStylesFunc from '../../styles/commonStyles';
 import fontFamily from '../../styles/fontFamily';
-import Header from '../../Components/Header';
+import Header from '../../components/Header';
 import strings from '../../constants/lang';
 import {cameraHandler} from '../../utils/commonFunction';
 import stylesFunc from './styles';
@@ -28,7 +28,7 @@ import imagePath from '../../constants/imagePath';
 import ActionSheet from 'react-native-actionsheet';
 import {showError, showSuccess} from '../../utils/helperFunctions';
 import {cloneDeep} from 'lodash';
-import ButtonComponent from '../../Components/ButtonComponent';
+import ButtonComponent from '../../components/ButtonComponent';
 
 export default function Reimbursement({route, navigation}) {
   const userData = useSelector(state => state?.auth?.userData);

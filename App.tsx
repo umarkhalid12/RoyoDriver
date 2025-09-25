@@ -10,8 +10,8 @@ import DeviceInfo from 'react-native-device-info';
 import Modal from 'react-native-modal';
 import * as Progress from 'react-native-progress';
 import { Provider } from 'react-redux';
-import NoInternetModal from './src/Components/NoInternetModal';
-import NotificationModal from './src/Components/NotificationModal';
+import NoInternetModal from './src/components/NoInternetModal';
+import NotificationModal from './src/components/NotificationModal';
 import Container from './src/library/toastify-react-native';
 import Routes from './src/navigation/Routes';
 import {

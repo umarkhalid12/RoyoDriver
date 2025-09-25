@@ -1,5 +1,5 @@
 import axios from 'axios';
-import Geocoder from 'react-native-geocoder';
+// import Geocoder from 'react-native-geocoder';
 import Geolocation from 'react-native-geolocation-service';
 
 export const googlePlacesApi = async (data, key, latLng) => {

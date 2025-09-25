@@ -2,7 +2,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import React from 'react';
 import { Image } from 'react-native';
 import { useSelector } from 'react-redux';
-import CustomDrawerContent from '../Components/CustomDrawerContent';
+import CustomDrawerContent from '../components/CustomDrawerContent';
 import imagePath from '../constants/imagePath';
 import strings from '../constants/lang';
 import { ChatRoom, ContactUs, GoToHome, ProductsPrice, ServiceSlots, Settings } from '../Screens';

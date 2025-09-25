@@ -11,18 +11,18 @@ import {
   View,
   Linking,
 } from 'react-native';
-import { useDarkMode } from 'react-native-dynamic';
+// import { useDarkMode } from 'react-native-dynamic';
 import DeviceCountry from 'react-native-device-country';
 import DeviceInfo, { getBundleId } from 'react-native-device-info';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import RNOtpVerify from 'react-native-otp-verify';
 import ScaledImage from 'react-native-scalable-image';
 import { useSelector } from 'react-redux';
-import GradientButton from '../../../Components/GradientButton';
-import Header from '../../../Components/Header';
-import { loaderOne } from '../../../Components/Loaders/AnimatedLoaderFiles';
-import PhoneNumberInput from '../../../Components/PhoneNumberInput';
-import WrapperContainer from '../../../Components/WrapperContainer';
+import GradientButton from '../../../components/GradientButton';
+import Header from '../../../components/Header';
+import { loaderOne } from '../../../components/Loaders/AnimatedLoaderFiles';
+import PhoneNumberInput from '../../../components/PhoneNumberInput';
+import WrapperContainer from '../../../components/WrapperContainer';
 import imagePath from '../../../constants/imagePath';
 import strings from '../../../constants/lang';
 import navigationStrings from '../../../navigation/navigationStrings';

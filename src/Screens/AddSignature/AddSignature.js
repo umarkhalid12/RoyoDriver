@@ -1,10 +1,10 @@
 import React, {useRef, useState} from 'react';
 import {Image, Text, TouchableOpacity, View} from 'react-native';
 import {useSelector} from 'react-redux';
-import ButtonComponent from '../../Components/ButtonComponent';
-import Header from '../../Components/Header';
-import {loaderOne} from '../../Components/Loaders/AnimatedLoaderFiles';
-import WrapperContainer from '../../Components/WrapperContainer';
+import ButtonComponent from '../../components/ButtonComponent';
+import Header from '../../components/Header';
+import {loaderOne} from '../../components/Loaders/AnimatedLoaderFiles';
+import WrapperContainer from '../../components/WrapperContainer';
 import imagePath from '../../constants/imagePath';
 import strings from '../../constants/lang';
 // import store from '../../redux/store';

@@ -10,11 +10,11 @@ import {
   View,
 } from 'react-native';
 import {useSelector} from 'react-redux';
-import DatePickerModal from '../../Components/DatePickerModal';
-import Header from '../../Components/Header';
-import {loaderOne} from '../../Components/Loaders/AnimatedLoaderFiles';
-import TaskListCard from '../../Components/TaskListCard';
-import WrapperContainer from '../../Components/WrapperContainer';
+import DatePickerModal from '../../components/DatePickerModal';
+import Header from '../../components/Header';
+import {loaderOne} from '../../components/Loaders/AnimatedLoaderFiles';
+import TaskListCard from '../../components/TaskListCard';
+import WrapperContainer from '../../components/WrapperContainer';
 import imagePath from '../../constants/imagePath';
 import strings from '../../constants/lang';
 import navigationStrings from '../../navigation/navigationStrings';

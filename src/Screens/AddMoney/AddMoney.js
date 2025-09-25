@@ -15,7 +15,7 @@ import {useSelector} from 'react-redux';
 import GradientButton from '../../Components/GradientButton';
 import Header from '../../Components/Header';
 import {loaderOne} from '../../Components/Loaders/AnimatedLoaderFiles';
-import WrapperContainer from '../../Components/WrapperContainer';
+import WrapperContainer from '../../components/WrapperContainer';
 import imagePath from '../../constants/imagePath';
 import strings from '../../constants/lang';
 import navigationStrings from '../../navigation/navigationStrings';

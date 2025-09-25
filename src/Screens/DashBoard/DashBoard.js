@@ -12,10 +12,10 @@ import {
   View,
 } from 'react-native';
 import { useSelector } from 'react-redux';
-import Header from '../../Components/Header';
-import { loaderOne } from '../../Components/Loaders/AnimatedLoaderFiles';
-import SwitchSelectorComponent from '../../Components/SwitchSelector';
-import WrapperContainer from '../../Components/WrapperContainer';
+import Header from '../../components/Header';
+import { loaderOne } from '../../components/Loaders/AnimatedLoaderFiles';
+import SwitchSelectorComponent from '../../components/SwitchSelector';
+import WrapperContainer from '../../components/WrapperContainer';
 import imagePath from '../../constants/imagePath';
 import actions from '../../redux/actions';
 // import store from '../../redux/store';
@@ -27,8 +27,8 @@ import MapView, {
   PROVIDER_GOOGLE,
   PROVIDER_DEFAULT,
 } from 'react-native-maps'; // remove PROVIDER_GOOGLE import if not using Google Maps
-import ListEmptyComponent from '../../Components/ListEmptyComponent';
-import TaskListCard from '../../Components/TaskListCard';
+import ListEmptyComponent from '../../components/ListEmptyComponent';
+import TaskListCard from '../../components/TaskListCard';
 import strings from '../../constants/lang';
 import navigationStrings from '../../navigation/navigationStrings';
 import colors from '../../styles/colors';
@@ -52,11 +52,11 @@ navigator.geolocation = require('react-native-geolocation-service');
 import socketServices from '../../utils/scoketService';
 // import BackgroundTimer from 'react-native-background-timer';
 // import BackgroundGeolocation from '@hariks789/react-native-background-geolocation';
-import generateBoxShadowStyle from '../../Components/generateBoxShadowStyle';
-import GradientButton from '../../Components/GradientButton';
+import generateBoxShadowStyle from '../../components/generateBoxShadowStyle';
+import GradientButton from '../../components/GradientButton';
 import BottomSheet, { BottomSheetScrollView } from '@gorhom/bottom-sheet';
-import BidAcceptRejectCard from '../../Components/BidAcceptRejectCard';
-import PoolingSuggestionCard from '../../Components/PoolingSuggestionCard';
+import BidAcceptRejectCard from '../../components/BidAcceptRejectCard';
+import PoolingSuggestionCard from '../../components/PoolingSuggestionCard';
 import { appIds } from '../../utils/constants/DynamicAppKeys';
 import { colorArray } from '../../utils/constants/ConstantValues';
 import { chekLocationPermission } from '../../utils/permissions';

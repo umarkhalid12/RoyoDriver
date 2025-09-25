@@ -22,9 +22,9 @@ import MapView, {
 } from 'react-native-maps'; // import {createOpenLink} from '../../utils/CreateMapLinks';
 import { createMapLink, createOpenLink } from 'react-native-open-maps';
 import { useSelector } from 'react-redux';
-import Header from '../../Components/Header';
-import { loaderOne } from '../../Components/Loaders/AnimatedLoaderFiles';
-import WrapperContainer from '../../Components/WrapperContainer';
+import Header from '../../components/Header';
+import { loaderOne } from '../../components/Loaders/AnimatedLoaderFiles';
+import WrapperContainer from '../../components/WrapperContainer';
 import imagePath from '../../constants/imagePath';
 import strings from '../../constants/lang';
 import navigationStrings from '../../navigation/navigationStrings';
@@ -52,7 +52,7 @@ import {
   formatTime,
 } from '../../utils/helperFunctions';
 import stylesFunc from './styles';
-import ButtonComponent from '../../Components/ButtonComponent';
+import ButtonComponent from '../../components/ButtonComponent';
 import { mapStyle } from '../../utils/constants/MapStyle';
 import { getAllTravelDetails } from '../../utils/googlePlaceApi';
 import { getBundleId } from 'react-native-device-info';

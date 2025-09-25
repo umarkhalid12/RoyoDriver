@@ -26,7 +26,7 @@ import DeviceInfo, { getBundleId } from "react-native-device-info";
 import { appIds } from "../utils/constants/DynamicAppKeys";
 import { Subscriptions } from "../Screens";
 // import BackgroundGeolocation from '@hariks789/react-native-background-geolocation';
-import { useDarkMode } from "react-native-dynamic";
+// import { useDarkMode } from "react-native-dynamic";
 import { getItem } from "../utils/utils";
 import { string } from "is_js";
 import { saveCabPoolingStatus } from "../redux/actions/init";

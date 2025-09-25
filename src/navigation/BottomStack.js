@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import React from 'react';
 import { Image, StyleSheet } from 'react-native';
-import CustomBottomTabBar from '../Components/CustomBottomTabBar';
+import CustomBottomTabBar from '../components/CustomBottomTabBar';
 import imagePath from '../constants/imagePath';
 import strings from '../constants/lang';
 import colors from '../styles/colors';
