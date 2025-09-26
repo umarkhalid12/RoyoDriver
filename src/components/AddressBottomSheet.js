@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import FastImage from 'react-native-fast-image';
 import Geocoder from 'react-native-geocoding';
-import RNGooglePlaces from 'react-native-google-places';
+// import RNGooglePlaces from 'react-native-google-places';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import { useSelector } from 'react-redux';
 import imagePath from '../constants/imagePath';

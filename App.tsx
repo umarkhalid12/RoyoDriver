@@ -5,11 +5,10 @@ import SplashScreen from 'react-native-splash-screen';
 import { getBundleId } from 'react-native-device-info';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Text, View } from 'react-native';
-import DeviceInfo from 'react-native-device-info';
-import Modal from 'react-native-modal';
-import * as Progress from 'react-native-progress';
 import { Provider } from 'react-redux';
+import DeviceInfo from 'react-native-device-info';
+import { MenuProvider } from 'react-native-popup-menu';
+
 import NoInternetModal from './src/components/NoInternetModal';
 import NotificationModal from './src/components/NotificationModal';
 import Container from './src/library/toastify-react-native';
@@ -19,8 +18,6 @@ import {
   updateInternetConnection,
 } from './src/redux/actions/init';
 import store from './src/redux/store';
-import colors from './src/styles/colors';
-import fontFamily from './src/styles/fontFamily';
 import { moderateScaleVertical, width } from './src/styles/responsiveSize';
 import { appIds } from './src/utils/constants/DynamicAppKeys';
 import {
@@ -29,16 +26,12 @@ import {
 } from './src/utils/notificationServices';
 import ShowNotificationForeground from './src/utils/ShowNotificationForeground';
 import types from './src/redux/types';
-import notifee, { AndroidImportance } from '@notifee/react-native';
-import { MenuProvider } from 'react-native-popup-menu';
-
-const { dispatch } = store;
 
 const App = () => {
   const [internetConnection, setInternet] = useState(true);
 
   const setInitialLanguage = () => {
-    if (appIds.bluebolt == DeviceInfo.getBundleId()) {
+    if (appIds.bluebolt === DeviceInfo.getBundleId()) {
       setDefaultLanguage({
         id: 9,
         label: 'Vietnamese',
@@ -49,77 +42,67 @@ const App = () => {
 
   useEffect(() => {
     (async () => {
-      await AsyncStorage.getItem('alreadyLaunched').then((value) => {
-        if (value == null) {
-          const data = JSON.stringify({ data: true });
-          AsyncStorage.setItem('alreadyLaunched', data);
+      try {
+        const alreadyLaunched = await AsyncStorage.getItem('alreadyLaunched');
+        if (!alreadyLaunched) {
+          await AsyncStorage.setItem(
+            'alreadyLaunched',
+            JSON.stringify({ data: true })
+          );
           setInitialLanguage();
         }
-      });
 
-      await AsyncStorage.getItem('cabPoolingStatus')
-        .then((value) => {
-          const poolingStatus = JSON.parse(value);
-          dispatch({
+        const cabPoolingStatus = await AsyncStorage.getItem('cabPoolingStatus');
+        if (cabPoolingStatus) {
+          const poolingStatus = JSON.parse(cabPoolingStatus);
+          store.dispatch({
             type: types.POOLING,
             payload: poolingStatus,
           });
-        })
-        .catch((error) => {
-          console.log(error, 'error in getting poolstatus');
-        });
-    })().catch((err) => {
-      console.error(err);
-    });
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    })();
   }, []);
-
-  const notificationConfig = () => {
-    requestUserPermission();
-    notificationListener();
-  };
 
   useEffect(() => {
-    notificationConfig();
-    if (getBundleId() == appIds?.flank) {
-      setTimeout(() => {
-        SplashScreen.hide();
-      }, 100);
-    } else {
-      setTimeout(() => {
-        SplashScreen.hide();
-      }, 1500);
-    }
+    requestUserPermission();
+    notificationListener();
+
+    setTimeout(() => {
+      SplashScreen.hide();
+    }, getBundleId() === appIds?.flank ? 100 : 1500);
   }, []);
 
-  // Check internet connection
   useEffect(() => {
     const removeNetInfoSubscription = NetInfo.addEventListener((state) => {
       const netStatus = state.isConnected;
       setInternet(netStatus);
-      updateInternetConnection(netStatus);
+      store.dispatch(updateInternetConnection(netStatus)); // ✅ must dispatch
     });
 
     return () => removeNetInfoSubscription();
   }, []);
 
   return (
-    <SafeAreaProvider>
-      <MenuProvider>
-        <Provider store={store}>
+    <Provider store={store}>
+      <SafeAreaProvider>
+        <MenuProvider>
           <ShowNotificationForeground />
           <Routes />
           <NotificationModal />
-        </Provider>
-        <Container
-          width={width - 20}
-          position="top"
-          duration={2000}
-          positionValue={moderateScaleVertical(20)}
-        />
-        <FlashMessage position="top" />
-        <NoInternetModal show={!internetConnection} />
-      </MenuProvider>
-    </SafeAreaProvider>
+          <Container
+            width={width - 20}
+            position="top"
+            duration={2000}
+            positionValue={moderateScaleVertical(20)}
+          />
+          <FlashMessage position="top" />
+          <NoInternetModal show={!internetConnection} />
+        </MenuProvider>
+      </SafeAreaProvider>
+    </Provider>
   );
 };
 

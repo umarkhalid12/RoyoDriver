@@ -3,7 +3,7 @@ import { Image, Platform, StyleSheet, Text, TouchableOpacity, View } from 'react
 import Geocoder from 'react-native-geocoding';
 import Geolocation from 'react-native-geolocation-service';
 import MapView, { PROVIDER_DEFAULT, PROVIDER_GOOGLE } from 'react-native-maps';
-import GradientButton from '../Components/GradientButton';
+import GradientButton from '../components/GradientButton';
 import imagePath from '../constants/imagePath';
 import strings from '../constants/lang';
 import colors from '../styles/colors';

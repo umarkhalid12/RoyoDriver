@@ -1,6 +1,6 @@
 import React from 'react';
 import {View} from 'react-native';
-import ContentLoader from 'react-native-easy-content-loader';
+// import ContentLoader from 'react-native-easy-content-loader';
 import {
   moderateScale,
   moderateScaleVertical,

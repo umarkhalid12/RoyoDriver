@@ -38,7 +38,9 @@
     "react-native": "0.81.4",
     "react-native-actionsheet": "^2.4.2",
     "react-native-calendars": "^1.1313.0",
+    "react-native-cardview": "^2.0.5",
     "react-native-communications": "^2.2.1",
+    "react-native-countdown-circle-timer": "^3.2.1",
     "react-native-country-picker-modal": "^2.0.0",
     "react-native-date-picker": "^5.0.13",
     "react-native-device-country": "^1.1.1",
@@ -66,6 +68,7 @@
     "react-native-modal": "^14.0.0-rc.1",
     "react-native-otp-verify": "^1.1.8",
     "react-native-pager-view": "^6.9.1",
+    "react-native-paper": "^5.14.5",
     "react-native-permissions": "^5.4.2",
     "react-native-popup-menu": "^0.18.0",
     "react-native-progress": "^5.0.1",
@@ -92,7 +95,8 @@
     "react-native-worklets": "^0.5.1",
     "react-redux": "^9.2.0",
     "redux": "^5.0.1",
-    "redux-thunk": "^3.1.0"
+    "redux-thunk": "^3.1.0",
+    "socket.io-client": "^4.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

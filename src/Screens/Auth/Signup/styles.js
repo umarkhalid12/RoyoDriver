@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import generateBoxShadowStyle from '../../../Components/generateBoxShadowStyle';
+import generateBoxShadowStyle from '../../../components/generateBoxShadowStyle';
 import colors from '../../../styles/colors';
 import fontFamily from '../../../styles/fontFamily';
 import {

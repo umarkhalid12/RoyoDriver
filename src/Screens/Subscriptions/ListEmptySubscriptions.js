@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, View} from 'react-native';
-import CardLoader from '../../Components/Loaders/CardLoader';
-import HeaderLoader from '../../Components/Loaders/HeaderLoader';
+import CardLoader from '../../components/Loaders/CardLoader';
+import HeaderLoader from '../../components/Loaders/HeaderLoader';
 import {
   height,
   moderateScale,

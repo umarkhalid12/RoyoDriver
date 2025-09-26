@@ -1,4 +1,4 @@
-import validator from 'is_js';
+// import validator from 'is_js';
 import strings from '../constants/lang';
 const checkEmpty = (val, key) => {
   if (validator.empty(val)) {

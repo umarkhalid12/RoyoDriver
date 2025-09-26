@@ -6,7 +6,7 @@ import {
   TextInput, TouchableOpacity, View
 } from 'react-native';
 import * as RNLocalize from 'react-native-localize';
-import ModalView from '../Components/Modal';
+import ModalView from '../components/Modal';
 import imagePath from '../constants/imagePath';
 import colors from '../styles/colors';
 import fontFamily from '../styles/fontFamily';
