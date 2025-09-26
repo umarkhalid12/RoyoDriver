@@ -11,10 +11,10 @@ import {
     renderers
 } from 'react-native-popup-menu';
 import { useSelector } from 'react-redux';
-import ButtonWithLoader from '../../Components/ButtonWithLoader';
-import Header from '../../Components/Header';
-import TaskListCard from '../../Components/TaskListCard';
-import WrapperContainer from '../../Components/WrapperContainer';
+import ButtonWithLoader from '../../components/ButtonWithLoader';
+import Header from '../../components/Header';
+import TaskListCard from '../../components/TaskListCard';
+import WrapperContainer from '../../components/WrapperContainer';
 import strings from '../../constants/lang';
 import navigationStrings from '../../navigation/navigationStrings';
 import actions from '../../redux/actions';

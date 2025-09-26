@@ -10,22 +10,22 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import {useDarkMode} from 'react-native-dynamic';
+// import {useDarkMode} from 'react-native-dynamic';
 import DeviceInfo from 'react-native-device-info';
 import HTMLView from 'react-native-htmlview';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import {Pagination} from 'react-native-snap-carousel';
 import StarRating from 'react-native-star-rating';
 import {useSelector} from 'react-redux';
-import Banner2 from '../../Components/Banner2';
-import BottomSlideModal from '../../Components/BottomSlideModal';
-import GradientButton from '../../Components/GradientButton';
-import GradientCartView from '../../Components/GradientCartView';
-import Header from '../../Components/Header';
-import HorizontalLine from '../../Components/HorizontalLine';
-import {loaderOne} from '../../Components/Loaders/AnimatedLoaderFiles';
-import ProductsComp from '../../Components/ProductsComp';
-import WrapperContainer from '../../Components/WrapperContainer';
+import Banner2 from '../../components/Banner2';
+import BottomSlideModal from '../../components/BottomSlideModal';
+import GradientButton from '../../components/GradientButton';
+import GradientCartView from '../../components/GradientCartView';
+import Header from '../../components/Header';
+import HorizontalLine from '../../components/HorizontalLine';
+import {loaderOne} from '../../components/Loaders/AnimatedLoaderFiles';
+import ProductsComp from '../../components/ProductsComp';
+import WrapperContainer from '../../components/WrapperContainer';
 import imagePath from '../../constants/imagePath';
 import strings from '../../constants/lang';
 import navigationStrings from '../../navigation/navigationStrings';

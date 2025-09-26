@@ -12,9 +12,9 @@ import {GiftedChat, InputToolbar, Send} from 'react-native-gifted-chat';
 import socketServices from '../../utils/scoketService';
 import {useSelector} from 'react-redux';
 import imagePath from '../../constants/imagePath';
-import Header from '../../Components/Header';
+import Header from '../../components/Header';
 import colors from '../../styles/colors';
-import WrapperContainer from '../../Components/WrapperContainer';
+import WrapperContainer from '../../components/WrapperContainer';
 import actions from '../../redux/actions';
 import {getImageUrl} from '../../utils/helperFunctions';
 import {
@@ -27,7 +27,7 @@ import {
 import FastImage from 'react-native-fast-image';
 import moment from 'moment';
 import _ from 'lodash';
-import CircularImages from '../../Components/CircularImages';
+import CircularImages from '../../components/CircularImages';
 import Modal from 'react-native-modal';
 import {ScrollView} from 'react-native-gesture-handler';
 import fontFamily from '../../styles/fontFamily';

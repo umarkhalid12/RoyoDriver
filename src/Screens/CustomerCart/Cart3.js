@@ -30,14 +30,14 @@ import * as RNLocalize from 'react-native-localize';
 import Modal from 'react-native-modal';
 import RazorpayCheckout from 'react-native-razorpay';
 import {useSelector} from 'react-redux';
-import ButtonComponent from '../../Components/ButtonComponent';
-import GradientButton from '../../Components/GradientButton';
-import Header from '../../Components/Header';
-import HorizontalLine from '../../Components/HorizontalLine';
-import {loaderOne} from '../../Components/Loaders/AnimatedLoaderFiles';
-import HeaderLoader from '../../Components/Loaders/HeaderLoader';
-import ProductListLoader from '../../Components/Loaders/ProductListLoader';
-import WrapperContainer from '../../Components/WrapperContainer';
+import ButtonComponent from '../../components/ButtonComponent';
+import GradientButton from '../../components/GradientButton';
+import Header from '../../components/Header';
+import HorizontalLine from '../../components/HorizontalLine';
+import {loaderOne} from '../../components/Loaders/AnimatedLoaderFiles';
+import HeaderLoader from '../../components/Loaders/HeaderLoader';
+import ProductListLoader from '../../components/Loaders/ProductListLoader';
+import WrapperContainer from '../../components/WrapperContainer';
 import imagePath from '../../constants/imagePath';
 import strings from '../../constants/lang';
 import staticStrings from '../../constants/staticStrings';
@@ -68,7 +68,7 @@ import {
 import {getItem, removeItem, setItem} from '../../utils/utils';
 import stylesFun from './styles';
 // import BottomSheet, {BottomSheetScrollView} from '@gorhom/bottom-sheet';
-import VariantAddons from '../../Components/VariantAddons';
+import VariantAddons from '../../components/VariantAddons';
 
 export default function Cart({navigation, route}) {
   const theme = useSelector(state => state?.initBoot?.themeColor);

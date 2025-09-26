@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet } from 'react-native'
-import BottomSheetForm from '../../Components/BottomSheetForm'
+import BottomSheetForm from '../../components/BottomSheetForm'
 
 export default function ProductsPrice({
     navigation

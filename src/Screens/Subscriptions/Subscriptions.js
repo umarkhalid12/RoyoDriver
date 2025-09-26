@@ -23,16 +23,16 @@ import {
 import imagePath from '../../constants/imagePath';
 import { transportationArray } from '../../utils/constants/ConstantValues';
 import {styles} from './styles';
-import SubscriptionComponent from '../../Components/SubscriptionComponent';
+import SubscriptionComponent from '../../components/SubscriptionComponent';
 import { FlatList } from 'react-native-gesture-handler';
-import SubscriptionComponent2 from '../../Components/SubscriptionComponent2';
+import SubscriptionComponent2 from '../../components/SubscriptionComponent2';
 import actions from '../../redux/actions';
 import { showError, showSuccess } from '../../utils/helperFunctions';
 import axios from 'axios';
 import ListEmptySubscriptions from './ListEmptySubscriptions';
 import { GET_ALL_SUBSCRIPTION_PLANS } from '../../config/urls';
-import ModalView from '../../Components/Modal';
-import GradientButton from '../../Components/GradientButton';
+import ModalView from '../../components/Modal';
+import GradientButton from '../../components/GradientButton';
 import FastImage from 'react-native-fast-image';
 
 export default function Subscriptions({ route, navigation }) {
